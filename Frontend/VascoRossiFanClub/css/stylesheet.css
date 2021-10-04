@@ -1,0 +1,79 @@
+div
+{
+width: 80%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+text-align:center;
+}
+
+.navbar
+{
+    background-color:black;
+    color:white;
+}
+
+.q
+{
+    color: red;
+    font-size: 70px;
+}
+
+a:link
+{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited
+{
+    color: yellow;
+    background-color: transparent;
+}
+
+a:hover
+{
+    color:black;
+    background-color:red;
+    font-style:italic;
+}
+
+
+.shadow
+{
+border: 1px solid black;
+box-shadow: 1px 1px #333333;
+}
+
+table
+{
+    border: 2px dashed black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titolotabella
+{
+    background-color: red;
+}
+
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td {
+    background-color: aqua;
+}
+
+.centro
+{
+width: 80%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+text-align:center;
+}
+
+.font
+{
+    font-family: 'Noto Sans', sans-serif;
+}

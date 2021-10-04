@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-16">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>⠀</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/kebablogo.png">
+</head>
+
+<body>
+  <video autoplay muted loop id="bgvideo">
+    <source src="video/kebab.mp4" type="video/mp4">
+  </video>
+
+  <div class="container-fluid px-2">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-dark text-center">
+          <div class="m-auto">
+            <a class="navbar-brand" href="#">
+              <img class="topimg" src="img/kebablogo.png" width="60px" height="60px" class="d-inline-block align-top" alt="">
+              <b class="toptitle">Super Kebab</b>
+              <img class="topimg" src="img/kebablogo.png" width="60px" height="60px" class="d-inline-block align-top" alt="">
+            </a>
+          </div>
+          <img id="carrello" src="img/foodpackage.png" width="50px" onclick="orderpopup()">
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-12 col-md-12 px-0">
+    <div class="row">
+      <nav class="mobilenav">
+      <div>
+      <span onclick="info('piadina')">Piadina</span>
+      <span onclick="info('panino')">Panino</span>
+      <span onclick="info('piatto')">Piatto</span>
+      <span onclick="info('pizza')">Pizza</span>
+      </nav>
+      </div>
+     </div>
+  </div>
+  <div id="paybox" class="paybox">
+    <div class="row">
+      <div class="col-sm-12 col-12">
+        <h1>GRAZIE PER L'ACQUISTO</h1>
+        <img id="paymentsuccess" src="img/success.gif" class="my-4" width="100px">
+        <div id="paymentspinner" class="spinner-border text-primary my-4" role="status">
+          <span class="sr-only"></span>
+        </div>
+        <h3 id="paymenttip">Stiamo processando il pagamento...</h3>
+      </div>
+    </div>
+  </div>
+  <div id="ordermodal" class="ordermodal">
+    <div class="row">
+      <div class="col-12">
+        <img id="closebtnlistaordini" src="img/closebtn.svg" onclick="closelistaordini()">
+        <h1>LISTA ORDINI</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <table id="ordertable" class="ordertable">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Quantità</th>
+              <th>Grandezza</th>
+              <th>Prezzo</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="col-6">
+        <form class="form" action="javascript:addToCart()">
+          <h5>Tipo</h5>
+          <select id="kebab-type">
+            <option value="Piadina">Piadina</option>
+            <option value="Panino">Panino</option>
+            <option value="Piatto">Piatto</option>
+            <option value="Pizza">Pizza</option>
+          </select><br>
+          <h5>Grandezza</h5>
+          <select id="kebab-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select><br>
+          <h5>Quantità</h5> 
+          <input value="1" type="number" id="kebab-count"></input><br>
+          <button id="addproduct" class="orderbtn" type="submit"> <img class="whitesvg" src="img/plusicon.svg" width="25px"> Aggiungi</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="orderbtn" onclick="paymentdone()"> <img class="whitesvg" src="img/cc.svg" width="25px"> PROCEDI</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1 px-0">
+        <nav class="kebabbar">
+          <a><span class="prodotto" onclick="info('piadina')"><img src="img/piadina.png"width="100px">Piadina</span></a>
+          <a><span class="prodotto" onclick="info('panino')"><img src="img/panino.png" width="100px">Panino</span></a>
+          <a><span class="prodotto" onclick="info('piatto')"><img src="img/piatto.png" width="100px">Piatto</span></a>
+          <a><span class="prodotto" onclick="info('pizza')"><img src="img/pizza.png" width="100px">Pizza</span></a>
+          <div class="animation start-home"></div>
+        </nav>
+      </div>
+      <div class="col-10">
+        <div id="infobox" class="kebabinfo">
+          <img id="closebtn" src="img/closebtn.svg" onclick="closeinfobox()">
+          <h1 class="text-center">INFORMAZIONI KEBAB</h1>
+          <br>
+          <div class="row">
+            <div class="col">&nbsp;</div> <!-- Spacer -->
+            <div class="col-md-12 col-sm-12 col-lg-3  col-12 slightborder infoboxheight mx-0">
+              <h2 class="text-center infoheader">DESCRIZIONE</h2>
+              <p id="desc">&nbsp;</p>
+            </div>
+            <div class="col">&nbsp;</div> <!-- Spacer -->
+            <div class="col-md-12 col-sm-12 col-lg-3 col-12 slightborder infoboxheight mx-0 text-center">
+              <h2 class="text-center infoheader">IMMAGINI</h2>
+              <img class="imageswitcher" id="kebabimg" src="" width="300px">
+            </div>
+            <div class="col">&nbsp;</div> <!-- Spacer -->
+            <div class="col-md-12 col-sm-12 col-lg-3 col-12 slightborder infoboxheight mx-0">
+              <h2 class="text-center infoheader">PREZZO</h2>
+              <table id="tabellaprezzi">
+                <thead>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Grandezza</th>
+                    <th>Prezzo</th>
+                  </tr>
+                </thead>
+                <tbody id="prices">
+                  <tr>
+                    <td id="type" rowspan="5">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>XL</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col">&nbsp;</div> <!-- Spacer -->
+
+          </div>
+          <div class="row">
+            <button id="orderbtn" class="orderbtn" onclick="orderpopup()">
+              <img class="icon" id="carrello" src="img/shoppingcart.svg" width="25px"> Ordina
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer">
+          <p><b>Copyright 2021 © Super Kebab</b> - Via Del Filarete, Firenze | P. IVA 17836192371</p>
+        </div>
+    </footer>
+  </div>
+  <br>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/titlescroll.js" data-start="1" data-speed="300"></script>
+
+</body>
+
+</html>

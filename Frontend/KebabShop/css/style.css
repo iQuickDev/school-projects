@@ -1,0 +1,473 @@
+:root {
+    --barcolor: #333b;
+	--textcolor: #fff;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #141414;
+	cursor: url('data:image/x-icon;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHa4s/8AAAADAAAAAwAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////8AAP/+AAH/+AAD//AAB//AAA/+AAAf9AAAH+AAAD/AAAB/wAAA/8AAAf/AAAP/gAAD/4AAB/+AAA//AAAf/4AAP/+AAH//4AD//8AB///AAf//4AP//+AD///8g////+f////3//////////////////8='), auto;
+}
+
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width:100%;
+    min-height:100%;
+    z-index:-1;
+}
+
+.navbar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--barcolor);
+}
+
+.navbar-brand {
+    background: url("../img/fire.gif") center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    font-size: 2.5rem;
+    -webkit-text-stroke: .25px lightgoldenrodyellow;
+}
+
+.kebabselector {
+    list-style: none;
+    padding: 15px;
+}
+
+.prodotto {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+	padding: 10px;
+}
+
+.kebabinfo {
+    width: 100%;
+    height: 100%;
+    background-color: var(--barcolor);
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 10px;
+   	padding: 20px;
+    color: var(--textcolor);
+	display: none;
+}
+
+.kebabbar {
+	width: 100%;
+	height: 570px;
+	border-radius: 8px;
+	font-size: 0;
+	margin-left: 10px;
+    background-color: var(--barcolor);
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+.kebabbar a {
+	width: 100%;
+	height: 50px;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	padding: 25px;
+
+}
+
+.kebabbar .animation {
+	position: absolute;
+	height: 10%;
+	top: 0;
+	z-index: 0;
+	transition: all .35s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100%;
+}
+
+a:nth-child(2) {
+	width: 100%;
+}
+
+a:nth-child(3) {
+	width: 100%;
+}
+
+a:nth-child(4) {
+	width: 100%;
+}
+
+a:nth-child(5) {
+	width: 100%;
+}
+
+.kebabbarnav .start-piadina, a:nth-child(1):hover~.animation {
+	width: 100%;
+	height: 145px;
+	top: 60px;
+	background-color: #f75726;
+}
+.kebabbarnav .start-panino, a:nth-child(2):hover~.animation {
+	width: 100%;
+	height: 140px;
+	top: 220px;
+	background-color: #f75726;
+}
+.kebabbar .start-piatto, a:nth-child(3):hover~.animation {
+	width: 100%;
+	height: 130px;
+	top: 360px;
+	background-color: #f75726;
+}
+.kebabbar .start-pizza, a:nth-child(4):hover~.animation {
+	width: 100%;
+	height: 130px;
+	top: 500px;
+	background-color: #f75726;
+}
+
+.slightborder {
+	border: 1px solid black;
+	border-radius: 10px;
+	border-collapse: collapse;
+}
+
+.imageswitcher {
+	padding-top: 50px;
+}
+
+.infoheader {
+	background-color: rgba(51, 51, 51, 0.75);
+	padding: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 0.25px solid black;
+	border-top: 0px;
+}
+
+.infoboxheight {
+	height: 400px;
+}
+
+#tabellaprezzi, th, td {
+	border: 1px solid black;
+	text-align: center;
+	margin: auto;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	margin-top: 40px;
+}
+
+#closebtn {
+	position: absolute;
+	right: -20px;
+	width: 25px;
+	filter: invert(18%) sepia(87%) saturate(5024%) hue-rotate(355deg) brightness(99%) contrast(123%);
+}
+
+#closebtn:hover {
+	animation: closebtnhover .5s linear alternate infinite;
+}
+
+#closebtnlistaordini {
+	position: absolute;
+	right: 15px;
+	width: 25px;
+	filter: invert(18%) sepia(87%) saturate(5024%) hue-rotate(355deg) brightness(99%) contrast(123%);
+}
+
+#closebtnlistaordini:hover {
+	animation: closebtnhover .5s linear alternate infinite;
+}
+
+@keyframes closebtnhover {
+	from {
+		transform: scale(1.0);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.icon {
+	filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(188deg) brightness(113%) contrast(100%);
+}
+
+.orderbtn {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 200px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: var(--barcolor);
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.orderbtn:active {
+	animation: btnclick .25s linear
+}
+
+@keyframes btnclick {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(0.8);
+	}
+}
+
+.ordermodal {
+	position: absolute;
+	background-color: #000000a0;
+	width: 1000px;
+	left: 400px;
+	top: 20%;
+	z-index: 2;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	color: white;
+}
+
+.ordertable {
+	text-align: center;
+}
+
+.form input, label, select  {
+	border-radius: 10px;
+	width: 100px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.paybox {
+	position: absolute;
+	background-color: #000000a0;
+	width: 1000px;
+	left: 400px;
+	top: 20%;
+	z-index: 2;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	color: white;
+}
+
+.footer {
+	position: fixed;
+	background-color: #141414d0;
+	width: 100%;
+	height: 60px;
+	bottom: 0px;
+	left: 0px;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+.whitesvg {
+	filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
+}
+
+#paymentspinner {
+	width: 100px;
+	height: 100px;
+}
+
+#paymentsuccess {
+	display: none;
+}
+
+.mobilenav {
+	width: 100%;
+	margin-top: 10px;
+	background-color: var(--barcolor);
+	text-align: center;
+	word-spacing: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	display: none;
+	color: white;
+}
+
+@media only screen and (max-width: 700px) {
+	.kebabbar {
+		display: none;
+	}
+	.kebabinfo {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.kebabinfo h1 {
+		font-size: 30px;
+		margin-top: 25px;
+	}
+	.imageswitcher {
+		padding-right: 50px;
+		padding-top: 20px;
+	}
+	
+	.infoboxheight {
+		height: 300px;
+	}
+
+	#bgvideo {
+		display: none;
+	}
+
+	#carrello {
+		display: none;
+	}
+
+	#tabellaprezzi, th, td {
+		height: 40px;
+		width: 50px;
+		margin-top: 10px;
+	}
+
+	#closebtn {
+		left: 20px;
+		top: 55px;
+	}
+
+	.mobilenav {
+		display: inline-block;
+	}
+
+	.ordermodal {
+		left: 0px;
+		width: 100%;
+		font-size: 8px;
+	}
+
+	.paybox {
+		left: 0px;
+		width: 100%;
+	}
+
+	.topimg {
+		display: none;
+	}
+
+	.form h5 {
+		font-size: 10px;
+	}
+
+	.form input, label, select  {
+		border-radius: 10px;
+		width: 60px;
+	}
+
+	body {
+		background-image: url("../img/mobilebg.png");
+	}
+
+	.orderbtn {
+		margin-left: auto;
+		margin-right: auto;
+		width: 120px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: var(--barcolor);
+		border-style: none;
+		font-size: 15px;
+		font-weight: bold;
+		color: white;
+	}
+	.ordermodal {
+		left: 0px;
+	}
+}
+@media only screen and (max-width: 1480px) {
+	.kebabbar a {
+		padding: 0px;
+	}
+	.kebabbar {
+		height: 490px;
+	}
+	.kebabbarnav .start-piadina, a:nth-child(1):hover~.animation {
+		width: 100%;
+		height: 120px;
+		top: 60px;
+		background-color: #f75726;
+	}
+	.kebabbarnav .start-panino, a:nth-child(2):hover~.animation {
+		width: 100%;
+		height: 120px;
+		top: 180px;
+		background-color: #f75726;
+	}
+	.kebabbar .start-piatto, a:nth-child(3):hover~.animation {
+		width: 100%;
+		height: 120px;
+		top: 300px;
+		background-color: #f75726;
+	}
+	.kebabbar .start-pizza, a:nth-child(4):hover~.animation {
+		width: 100%;
+		height: 120px;
+		top: 400px;
+		background-color: #f75726;
+	}
+}
+
+@media only screen and (max-width: 940px)
+{
+	.ordermodal {
+		left: 0px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	
+	.imageswitcher {
+		width: 250px;
+	}
+	
+	.infoboxheight {
+		height: 300px;
+	}
+
+	.infoheader {
+		font-size: 20px;
+	}
+
+	#tabellaprezzi, th, td {
+		height: 10px;
+		width: 10px;
+		margin-top: 10px;
+	}
+
+	.kebabbar {
+		display: none;
+	}
+
+	.mobilenav {
+		display: inline-block;
+	}
+
+	.imageswitcher {
+		padding-top: 20px;
+		width: 350px;
+	}
+}
