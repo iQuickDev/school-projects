@@ -1,0 +1,76 @@
+body
+{
+    transition: .5s;
+}
+
+#title
+{
+    font-size: 4rem;
+}
+
+#togglebase
+{
+    position: relative;
+    margin: auto;
+    border-radius: 0.6rem;
+    width: 2.2rem;
+    height: 1rem;
+    background: black;
+}
+
+.togglehandleoff
+{
+    position: relative;
+    left: -10px;
+    margin: auto;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+.togglehandleon
+{
+    position: relative;
+    left: 10px;
+    margin: auto;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+.flag
+{
+    width: 200px;
+    display: block;
+    border: 1px solid black;
+}
+
+#euflag
+{
+    border: 0;
+}
+
+#eurvalue
+{
+    border: 1px solid black;
+}
+
+.valuebox
+{
+    width: 200px;
+    border: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+.currency
+{
+    display: inline-block;
+}

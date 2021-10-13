@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertitore di valuta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header" class="text-center">
+            <h1 id="title" class="display-1">CONVERTITORE DI VALUTA</h1>
+            <span id="darkmodelabel">darkmode</span>
+            <div id="togglebase">
+                <div id="togglehandle" class="togglehandleoff"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="valute">
+            <div class="container-fluid">
+                <div class="row text-center pt-5">
+                    <h2>Euro</h2>
+                    <img id="euflag" class="m-auto mb-4 flag" alt="" src="img/eu.png">
+                    <div class="valueinput">
+                        <input id="eurvalue" class="valuebox" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row text-center pt-5">
+
+                    <div class="currency col-md-4">
+                        <h2>Dollaro Americano</h2>
+                        <img id="usflag" class="mb-4 m-auto flag" src="img/us.png">
+                        <div class="valueinput">
+                            <input id="usdvalue" class="valuebox" readonly="true">
+                        </div>
+                    </div>
+
+                    <div class="currency col-md-4">
+                        <h2>Sterlina</h2>
+                        <img id="ukflag" class="mb-4 m-auto flag" src="img/uk.png">
+                        <div class="valueinput">
+                            <input id="gbpvalue" class="valuebox" readonly="true">
+                        </div>
+                    </div>
+
+                    <div class="currency col-md-4">
+                        <h2>Yen</h2>
+                        <img id="jpflag" class="mb-4 m-auto flag" src="img/jp.png">
+                        <div class="valueinput">
+                            <input id="jpyvalue" class="valuebox" readonly="true">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
