@@ -1,0 +1,57 @@
+#firsthalf
+{
+    background-image: url("../img/galaxy.jpg");
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+#firsthalf h1
+{
+    font-size: 5rem;
+    padding: 25px 5px 25px 25px;
+}
+
+#createaccount
+{
+    color: rgb(0, 162, 255)
+}
+
+#secondhalf h1
+{
+    font-size: 4rem;
+}
+
+#secondhalf .alert
+{
+    width: 300px;
+}
+
+#secondhalf input
+{
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: none;
+}
+
+#secondhalf input:focus
+{
+    border-bottom: 2px solid #5900ff;
+}
+
+#loginbtn
+{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px)
+{
+    #firsthalf
+    {
+        display: none;
+    }
+}
+
+.spacer
+{
+    margin: 10px 0px 10px 0px;
+}
