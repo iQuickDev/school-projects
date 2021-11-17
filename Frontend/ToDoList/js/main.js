@@ -1,10 +1,7 @@
 var activities = document.querySelector("#activities").children[1]
-var index = activities.length
 
 document.querySelector("#add").onclick = () =>
 {
-    console.log(activities.children)
-
     let activity = prompt("Cosa devi fare ?")
     let newRow = document.createElement("tr")
     let newCell = document.createElement("td")
