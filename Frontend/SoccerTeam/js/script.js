@@ -18,5 +18,5 @@ document.querySelector("#riserve").onclick = () =>
 
 document.querySelector("#risultati").onclick = () =>
 {
-    window.location.href = "../pages/risultati.html"
+    window.location.href = "pages/risultati.html"
 }
