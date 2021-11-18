@@ -1,0 +1,104 @@
+#nav span
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#titolare
+{
+    background: gold;
+}
+
+#panchina
+{
+    background: #ff004f;
+}
+
+.player
+{
+    width: 150px;
+}
+
+.rosterdisplay
+{
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+.rosterentry
+{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.firsteam img
+{
+    filter: saturate(10);
+}
+
+.secondteam img
+{
+    filter: hue-rotate(180deg) saturate(10);
+}
+
+.hidden
+{
+    display: none;
+}
+
+.box
+{
+    width: max-content;
+}
+
+.subtitle
+{
+    background: gold;
+    padding: 10px;
+}
+
+.subheaderalt
+{
+    width: max-content;
+}
+
+.subheaderalt input
+{
+    width: 120px;
+}
+
+.subheaderalt *
+{
+    margin: 10px;
+}
+
+#registrarisultato
+{
+    margin-right: auto;
+}
+
+.archiveentry
+{
+    border: 2px solid #FFFF00;
+    font-size: 1.5rem;
+}
+
+#footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon
+{
+    width: 50px;
+    padding: 10px;
+}
