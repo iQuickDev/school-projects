@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            background-color: #000;
+            color: #AAA;
+            text-align: center;
+        }
+
+        .project
+        {
+            display: inline-block;
+            margin: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: 2px solid #FFF;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .project:hover
+        {
+            background-color: #FFF;
+            color: #0082FF;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Projects - HOME</title>
+</head>
+<body>
+    <div class="project">
+        <h2>ClassSchedule</h2>
+    </div>
+
+    <div class="project">
+        <h2>CurrencyConverter</h2>
+    </div>
+
+    <div class="project">
+        <h2>FitnessGym</h2>
+    </div>
+
+    <div class="project">
+        <h2>KebabShop</h2>
+    </div>
+
+    <div class="project">
+        <h2>LoginPage</h2>
+    </div>
+
+    <div class="project">
+        <h2>Music</h2>
+    </div>
+
+    <div class="project">
+        <h2>Numbers</h2>
+    </div>
+
+    <div class="project">
+        <h2>ScarpeDiem</h2>
+    </div>
+
+    <div class="project">
+        <h2>SearchableTable</h2>
+    </div>
+
+    <div class="project">
+        <h2>SoccerTeam</h2>
+    </div>
+
+    <div class="project">
+        <h2>SushiWushi</h2>
+    </div>
+
+    <div class="project">
+        <h2>ToDoList</h2>
+    </div>
+
+    <div class="project">
+        <h2>TuscanCuisine</h2>
+    </div>
+
+    <div class="project">
+        <h2>VascoRossiFanClub</h2>
+    </div>
+
+    <div class="project">
+        <h2>ViaggiaMente</h2>
+    </div>
+
+    <div class="project">
+        <h2>VisitFirenze</h2>
+    </div>
+
+    <script>
+        var projects = document.querySelectorAll(".project")
+        var projectsTitle = document.querySelectorAll("h2")
+
+        for (let i = 0; i < projects.length; i++)
+        {
+            projects[i].onclick = () =>
+            {
+                window.location.href = `Frontend/${projectsTitle[i].textContent}/index.html`
+            }
+        }
+    </script>
+
+</body>
+</html>
